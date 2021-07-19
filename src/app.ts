@@ -1,0 +1,31 @@
+import 'reflect-metadata';
+import express, { Request, Response, NextFunction } from 'express';
+import { Container } from 'typedi';
+import { useExpressServer, useContainer, HttpError} from 'routing-controllers';
+
+useContainer(Container);
+const app = express();
+useExpressServer(app, {
+	middlewares: [express.json()],
+	controllers: [`${__dirname}/controllers/*.js`]
+});
+
+// exception handling
+app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+  if (err instanceof HttpError) {
+    return res.status(err.httpCode).send({
+      code: err.httpCode,
+      name: err.name,
+      message: err.message,
+    });
+  } else {
+    res.status(500).send({
+      code: 500,
+      name: 'Unknown Error',
+      message: 'Something went wrong',
+    });
+  }
+  next();
+});
+
+export default app;
