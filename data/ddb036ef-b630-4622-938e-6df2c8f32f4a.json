@@ -1,0 +1,1 @@
+{"createdAt":"2021-08-02T12:57:02.784Z","variables":{},"relations":{"users":[{"name":"Bob","age":30},{"name":"Jim","age":45}],"employees":[{"name":"Bob","age":30},{"name":"Foo","age":23}],"countries":[{"id":"1","name":"UK"},{"id":"2","name":"UAE"},{"id":"3","name":"US"}],"shops":[{"id":"23","name":"shop23"},{"id":"24","name":"shop24"},{"id":"25","name":"shop25"}]}}

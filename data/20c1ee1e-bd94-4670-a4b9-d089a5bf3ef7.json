@@ -1,0 +1,1 @@
+{"createdAt":"2021-08-05T21:52:49.356Z","variables":{},"relations":{"users":[{"name":"Bob","age":30},{"name":"Jim","age":45}],"employees":[{"name":"Bob","age":30},{"name":"Foo","age":23}]}}

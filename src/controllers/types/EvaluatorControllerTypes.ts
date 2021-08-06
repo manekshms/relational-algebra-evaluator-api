@@ -1,3 +1,3 @@
-export interface ProcessTextReqData {
+export interface EvaluateReqData {
 	text: string;
 }
