@@ -1,5 +1,5 @@
 import { Request } from "express";
-import { Body, Get, HttpCode, JsonController, Post, Req, UseBefore } from "routing-controllers";
+import { Body, Get, HttpCode, JsonController, OnUndefined, Post, Req, UseBefore } from "routing-controllers";
 import { Service } from "typedi";
 import { SessionMiddleware } from "../middlewares/SessionMiddleware";
 import uploadRelations from "../middlewares/uploads/uploadRelations";
@@ -43,7 +43,7 @@ export class EvaluatorController {
 	@Post('/add-relations')
 	@UseBefore(SessionMiddleware({ strict: true}))
 	@UseBefore(uploadRelations().single('relations'))
-	@HttpCode(204)
+	@OnUndefined(204)
 	public addRelations(
 		@Req() req: Request
 	): void {

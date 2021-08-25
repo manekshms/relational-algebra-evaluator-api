@@ -2013,7 +2013,12 @@ got@^9.6.0:
     to-readable-stream "^1.0.0"
     url-parse-lax "^3.0.0"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.4:
+graceful-fs@^4.1.11, graceful-fs@^4.1.4:
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
+  integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
+
+graceful-fs@^4.1.2:
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
@@ -2290,9 +2295,9 @@ is-ci@^2.0.0:
     ci-info "^2.0.0"
 
 is-core-module@^2.2.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.5.0.tgz#f754843617c70bfd29b7bd87327400cda5c18491"
-  integrity sha512-TXCMSDsEHMEEZ6eCA8rwRDbLu55MRGmrctljsBX/2v1d9/GzqHOxW5c5oPSgrUt2vBFXebu9rGqckXGPWOlYpg==
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.6.0.tgz#d7553b2526fe59b92ba3e40c8df757ec8a709e19"
+  integrity sha512-wShG8vs60jKfPWpF2KZRaAtvt3a20OAn7+IJ6hLPECpSABLcKtFKTTI4ZtH5QcBruBHlq+WsdHWyz0BCZW7svQ==
   dependencies:
     has "^1.0.3"
 
@@ -3022,9 +3027,9 @@ myconf@^0.0.32:
     path-exists "^2.0.0"
 
 nan@^2.12.1:
-  version "2.14.2"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
-  integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
+  integrity sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -3658,8 +3663,10 @@ regjsparser@^0.1.4:
   dependencies:
     jsesc "~0.5.0"
 
-relational-algebra-evaluator@../relational-algebra-evaluator:
-  version "1.0.0"
+relational-algebra-evaluator@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/relational-algebra-evaluator/-/relational-algebra-evaluator-1.0.3.tgz#936d5a70a45bc90bfcf617e55ff40d62082e8dc2"
+  integrity sha512-z/3pZunANTU+8pXUPEzPmbw2D1FrfcXOL2CjmONMsE5/0I0uTMrbTKwW+wJ+IRVppaZjPk7aFMpt+Kg0DWtmZA==
   dependencies:
     "@types/uuid" "^8.3.0"
     lodash "^4.17.21"
@@ -4204,9 +4211,9 @@ timed-out@^2.0.0:
   integrity sha1-84sK6B03R9YoAB9B2vxlKs5nHAo=
 
 timezones.json@^1.0.1:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/timezones.json/-/timezones.json-1.5.2.tgz#536e4779f518a4a2bdd0e95db1053a6c528252a0"
-  integrity sha512-Z+anCOAVpuJ0LcbsYl1a3D/yQNgntPzUgNTyoDgHklieiUWLec0XZM8xZ4I/r66M2yVMBfWhKftt0Rr6Fpu1/A==
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/timezones.json/-/timezones.json-1.5.3.tgz#f33d1869efb1bd52caedf799320063feeeacbf0f"
+  integrity sha512-d8qQmSzTXJVtgd2oPf+Mh9ndsIvOS0ssPszxD6fINf0iim1/zuGu2L2u1qWCLKlxr1Z/IBe9O/JT9+/Co9ZnZg==
 
 to-fast-properties@^1.0.0:
   version "1.0.3"

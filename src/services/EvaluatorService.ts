@@ -2,7 +2,7 @@ import path from 'path';
 import { Service } from "typedi";
 import { Rae } from 'relational-algebra-evaluator';
 import { ConfigService } from "../libs/ConfigService";
-import { HttpError, UnauthorizedError } from 'routing-controllers';
+import { BadRequestError, HttpError, UnauthorizedError } from 'routing-controllers';
 
 @Service()
 export class EvaluatorService {
@@ -24,7 +24,11 @@ export class EvaluatorService {
 			throw new UnauthorizedError('Invalid session Id')
 		}
 		const rae = Rae.getInstance({ sessionId, dataDir: raeDataDir});
+		try {
 		return rae.execute(text);
+		}catch(e) {
+			throw new BadRequestError(e.message);
+		}
 	}
 
 	public getAllRelations(sessionId: string): string[] {

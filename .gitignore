@@ -120,3 +120,5 @@ dist
 # Custom
 .env.*
 !.env.sample
+data/*
+!data/.gitignore
